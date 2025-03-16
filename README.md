@@ -14,7 +14,7 @@ The implementation includes:
 (1) Visualizing MRI Scans
 - To visualize the MRI scan and tumor in 3d, download ITK-SNAP from http://www.itksnap.org/pmwiki/pmwiki.php
 - Download BraTS dataset from https://drive.google.com/drive/folders/1HqEgzS8BV2c7xYNrZdEAnrHk7osJJ--2 and choose Task01_BrainTumour.tar.
-- Load BraTS iamge and corresponding segmentation mask into ITK-SNAP
+- Load one BraTS MRI and corresponding segmentation mask into ITK-SNAP
 
 (2) Initialize 2D U-Net Model
 To initialize the model before training, run:
