@@ -2,21 +2,22 @@
 
 # Deep Learning-based Brain Tumor Segmentation Using MRI
 
-This project performs **brain tumor segmentation** on MRI images using a **2D U-Net model**. The dataset used is a subset of the **Brain Tumor Image Segmentation (BraTS) challenge (2016-2017)**.
+This project performs **brain tumor segmentation** on MRI images using a **2D U-Net model**. 
 
 The implementation includes:
-- **Data visualization** using ITK-SNAP and Matplotlib.
+- **Data visualization** using ITK-SNAP.
 - **U-Net model training** with **5-fold cross-validation**.
-- **Segmentation performance evaluation** using **Dice Score** and **Hausdorff Distance**.
+- **Performance evaluation** using **Dice Score** & **Hausdorff Distance**.
 
 
 ## To Use:
 (1) Visualizing MRI Scans
-- To visualize the MRI scan and tumor in 3d download ITK-Snap from https://drive.google.com/drive/folders/1HqEgzS8BV2c7xYNrZdEAnrHk7osJJ--2 and choose Task01_BrainTumour.tar
+- To visualize the MRI scan and tumor in 3d download ITK-SNAP from https://drive.google.com/drive/folders/1HqEgzS8BV2c7xYNrZdEAnrHk7osJJ--2 and choose Task01_BrainTumour.tar.
+- Load BraTSiamge and corresponding segmentation mask into ITK-SNAP
 
 (2) Initialize 2D U-Net Model
-`python unet_model.py`
 To initialize the model before training, run:
+`python unet_model.py`
 
 (3) Training the U-Net Model
 To train the model using 5-fold cross-validation, run:
