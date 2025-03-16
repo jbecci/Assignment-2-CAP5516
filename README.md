@@ -13,15 +13,15 @@ The implementation includes:
 ## To Use:
 (1) Visualizing MRI Scans
 - To visualize the MRI scan and tumor in 3d download ITK-Snap from https://drive.google.com/drive/folders/1HqEgzS8BV2c7xYNrZdEAnrHk7osJJ--2 and choose Task01_BrainTumour.tar
-  
-  
-- To visualize MRI images and their segmentation masks, run:
-python mri_loader.py
 
-(2) Training the U-Net Model
+(2) Initialize 2D U-Net Model
+`python unet_model.py`
+To initialize the model before training, run:
+
+(3) Training the U-Net Model
 To train the model using 5-fold cross-validation, run:
-python train_unet.py
+`python train_unet.py`
 
-(3) Testing the Model
+(4) Testing the Model
 To evaluate the trained model on test images and compute Dice Score & Hausdorff Distance, run:
-python test_unet.py
+`python test_unet.py`
